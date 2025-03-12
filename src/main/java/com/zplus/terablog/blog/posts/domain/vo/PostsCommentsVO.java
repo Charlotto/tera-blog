@@ -14,8 +14,7 @@ import java.time.LocalDateTime;
  * <p>
  * 评论表
  * </p>
- * @author byteblogs
- * @since 2019-09-03
+ *     blogs
  */
 @Data
 @Accessors(chain = true)

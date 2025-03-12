@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * @author Andy Chen
+ *     ndy Chen
  * @date 9/30/19 1:30 PM
  */
 public class ThrowableUtils {

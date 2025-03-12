@@ -6,8 +6,7 @@ import com.zplus.terablog.blog.category.domain.po.Tags;
 import com.zplus.terablog.blog.category.domain.vo.TagsVO;
 
 /**
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 public interface TagsService extends BaseService<Tags> {
 

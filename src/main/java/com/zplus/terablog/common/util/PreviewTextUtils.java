@@ -2,7 +2,7 @@
 +--------------------------------------------------------------------------
 |   Mtons [#RELEASE_VERSION#]
 |   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
+
 |   http://www.mtons.com
 +---------------------------------------------------------------------------
 */
@@ -15,8 +15,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.safety.Whitelist;
 
 /**
- * @author: byteblogs
- * @date: 2019/8/3 14:57
+ *    
+
  */
 public class PreviewTextUtils {
     /**

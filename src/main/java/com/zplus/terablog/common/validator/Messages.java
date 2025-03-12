@@ -1,7 +1,7 @@
 package com.zplus.terablog.common.validator;
 
 /**
- * @author Andy Chen
+ *     ndy Chen
  * @date 9/30/19 12:46 PM
  */
 public interface Messages {

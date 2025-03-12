@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * 用户行为日志记录表: 后端controller类
- * @author 青涩知夏
  */
 @RestController
 @RequestMapping("/logs")

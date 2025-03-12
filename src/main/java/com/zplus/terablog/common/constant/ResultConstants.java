@@ -1,8 +1,8 @@
 package com.zplus.terablog.common.constant;
 
 /**
- * @Author: byteblogs
- * @Date: 2019/8/28 13:58
+ *    
+
  */
 public class ResultConstants {
     public static final int YES = 1;

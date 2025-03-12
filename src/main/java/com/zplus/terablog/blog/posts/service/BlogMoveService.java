@@ -5,9 +5,9 @@ import com.zplus.terablog.blog.posts.domain.vo.BlogMoveVO;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @author: zsg
+ *     
  * @description:
- * @date: 2020/4/5 17:13
+
  * @modified:
  */
 public interface BlogMoveService {

@@ -3,8 +3,8 @@ package com.zplus.terablog.common.exception;
 import com.zplus.terablog.common.enums.ErrorEnum;
 
 /**
- * @Author:byteblogs
- * @Date:2018/09/27 12:52
+ *   
+
  */
 public class BusinessException extends RuntimeException {
 

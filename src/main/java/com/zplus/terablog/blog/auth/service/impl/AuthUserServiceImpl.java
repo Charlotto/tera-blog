@@ -29,8 +29,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 @Service
 public class AuthUserServiceImpl extends ServiceImpl<AuthUserDao, AuthUser> implements AuthUserService {

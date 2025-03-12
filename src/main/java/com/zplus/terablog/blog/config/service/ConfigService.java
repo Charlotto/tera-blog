@@ -8,8 +8,7 @@ import com.zplus.terablog.blog.config.domain.vo.ConfigVO;
 import java.util.List;
 
 /**
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 public interface ConfigService extends BaseService<Config> {
 

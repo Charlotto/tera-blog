@@ -6,8 +6,7 @@ import com.zplus.terablog.blog.links.domain.po.FriendshipLink;
 import com.zplus.terablog.blog.links.domain.vo.FriendshipLinkVO;
 
 /**
- * @author byteblogs
- * @since 2019-04-03
+ *     blogs
  */
 public interface FriendshipLinkService extends BaseService<FriendshipLink> {
 

@@ -11,8 +11,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * 异步任务配置
  *
- * @author byteblogs
- * @date 2020/01/21
+
+
  */
 @Configuration
 @EnableAsync

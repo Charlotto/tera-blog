@@ -8,8 +8,8 @@ import com.zplus.terablog.blog.auth.domain.vo.AuthUserVO;
 import java.util.Date;
 
 /**
- * @author: byteblogs
- * @date: 2019/8/3 14:57
+ *    
+
  */
 public class JwtUtil {
 

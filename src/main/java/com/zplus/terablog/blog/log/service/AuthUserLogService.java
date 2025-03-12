@@ -8,9 +8,6 @@ import com.zplus.terablog.blog.log.domain.vo.AuthUserLogVO;
 
 /**
  * 用户行为日志记录表:业务接口类
- * @author generator
- * @date 2019-12-25 09:10:17
- * @since 1.0
  */
 public interface AuthUserLogService extends BaseService<AuthUserLog> {
 

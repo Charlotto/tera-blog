@@ -11,9 +11,9 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.validation.Valid;
 
 /**
- * @author: zsg
+ *     
  * @description:
- * @date: 2020/4/5 17:20
+
  * @modified:
  */
 @RestController

@@ -12,8 +12,7 @@ import java.util.List;
  * <p>
  * 评论表 Mapper 接口
  * </p>
- * @author byteblogs
- * @since 2019-09-03
+ *     blogs
  */
 public interface PostsCommentsDao extends BaseDao<PostsComments> {
 

@@ -17,8 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 @RestController
 @RequestMapping("/config")

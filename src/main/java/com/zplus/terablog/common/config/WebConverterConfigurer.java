@@ -18,8 +18,8 @@ import java.time.LocalDateTime;
 
 /**
  * @Description: 将Json序列化工具设置为FastJson
- * @Author:byteblogs
- * @Date:2019/01/15 08:00
+ *   
+
  */
 
 @Configuration

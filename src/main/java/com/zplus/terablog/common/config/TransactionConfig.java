@@ -11,8 +11,8 @@ import org.springframework.transaction.interceptor.TransactionInterceptor;
 
 /**
  * @Description:
- * @Author:byteblogs
- * @Date:2018/08/20 18:49
+ *   
+
  */
 @Configuration
 public class TransactionConfig {

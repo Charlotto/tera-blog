@@ -12,8 +12,7 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 /**
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

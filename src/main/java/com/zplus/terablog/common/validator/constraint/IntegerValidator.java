@@ -8,7 +8,7 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 /**
- * @author Andy Chen
+ *     ndy Chen
  * @date 9/30/19 12:33 PM
  */
 public class IntegerValidator implements ConstraintValidator<IntegerNotNull, Integer> {

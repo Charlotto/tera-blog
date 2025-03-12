@@ -18,10 +18,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * @author byteblogs
- * @since 2019-08-28
- */
 @RestController
 @RequestMapping("/auth")
 public class AuthUserController {

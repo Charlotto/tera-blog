@@ -11,8 +11,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * @author byteblogs
- * @since 2019-04-03
+ *     blogs
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

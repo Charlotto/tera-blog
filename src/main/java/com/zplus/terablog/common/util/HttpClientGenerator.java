@@ -35,8 +35,8 @@ import java.security.cert.X509Certificate;
 import java.util.Map;
 
 /**
- * @author: byteblogs
- * @date: 2019/8/3 14:57
+ *    
+
  * @modified:
  */
 public class HttpClientGenerator {

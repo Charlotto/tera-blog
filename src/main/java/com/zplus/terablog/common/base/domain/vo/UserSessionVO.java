@@ -3,11 +3,6 @@ package com.zplus.terablog.common.base.domain.vo;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
-/**
- * @Description:
- * @Author:byteblogs
- * @Date:2018/09/20 16:58
- */
 @Data
 @Accessors(chain = true)
 public class UserSessionVO {

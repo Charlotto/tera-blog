@@ -5,8 +5,8 @@ import com.zplus.terablog.blog.auth.domain.vo.AuthUserVO;
 
 /**
  * @description:
- * @author: byteblogs
- * @date: 2019/09/04 08:58
+ *    
+
  */
 public interface OauthService {
 

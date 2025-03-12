@@ -2,10 +2,6 @@ package com.zplus.terablog.system.init.strategy;
 
 import java.sql.Statement;
 
-/**
- * @author zhangshuguang
- * @date 2019/12/25
- */
 public interface TableInfoService {
 
     /**

@@ -13,8 +13,8 @@ import java.lang.annotation.Target;
 import static java.lang.annotation.ElementType.*;
 
 /**
- * @author: byteblogs
- * @date: 2019/9/30 21:36
+ *    
+
  */
 @Target({TYPE, ANNOTATION_TYPE,FIELD})
 @Retention(RetentionPolicy.RUNTIME)

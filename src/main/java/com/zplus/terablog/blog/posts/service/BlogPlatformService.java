@@ -3,9 +3,9 @@ package com.zplus.terablog.blog.posts.service;
 import com.zplus.terablog.blog.posts.domain.vo.BlogMoveVO;
 
 /**
- * @author: zsg
+ *     
  * @description:
- * @date: 2020/4/5 21:29
+
  * @modified:
  */
 public interface BlogPlatformService {

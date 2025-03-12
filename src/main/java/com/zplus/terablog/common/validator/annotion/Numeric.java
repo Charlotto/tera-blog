@@ -16,7 +16,7 @@ import static java.lang.annotation.ElementType.TYPE;
 /**
  * 是否为数字
  * 
- * @author Andy Chen
+ *     ndy Chen
  * @date 9/30/19 12:33 PM
  */
 @Target({TYPE, ANNOTATION_TYPE,FIELD})

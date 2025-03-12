@@ -7,9 +7,7 @@ import javax.annotation.PostConstruct;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- * @author 青涩知夏
- */
+
 @Service
 @Slf4j
 public class TeraBlogAuthUserSocialTable implements TableInfoService {

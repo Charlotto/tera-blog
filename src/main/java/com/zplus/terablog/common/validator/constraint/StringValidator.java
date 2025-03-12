@@ -8,7 +8,7 @@ import javax.validation.ConstraintValidatorContext;
 
 /**
  * 不为空字符串
- * @author Andy Chen
+ *     ndy Chen
  * @date 9/30/19 1:10 PM
  */
 public class StringValidator implements ConstraintValidator<NotBlank, String> {

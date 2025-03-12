@@ -1,8 +1,8 @@
 package com.zplus.terablog.common.enums;
 
 /**
- * @author: byteblogs
- * @date: 2020/1/19 20:36
+ *    
+
  */
 public enum  DateTypeEnum {
     /**

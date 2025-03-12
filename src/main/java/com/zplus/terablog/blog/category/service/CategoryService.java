@@ -6,8 +6,7 @@ import com.zplus.terablog.blog.category.domain.po.Category;
 import com.zplus.terablog.blog.category.domain.vo.CategoryVO;
 
 /**
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 public interface CategoryService extends BaseService<Category> {
 

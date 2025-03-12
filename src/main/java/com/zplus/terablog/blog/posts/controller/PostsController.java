@@ -25,8 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 /**
- * @author byteblogs@aliyun.com
- * @since 2019-08-28
+ *     blogs@aliyun.com
  */
 @RestController
 @RequestMapping("/posts")

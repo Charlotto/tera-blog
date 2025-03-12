@@ -6,8 +6,7 @@ import com.zplus.terablog.blog.auth.domain.po.AuthUser;
 import com.zplus.terablog.blog.auth.domain.vo.AuthUserVO;
 
 /**
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 public interface AuthUserService extends BaseService<AuthUser> {
 

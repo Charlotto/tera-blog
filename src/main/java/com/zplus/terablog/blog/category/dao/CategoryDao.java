@@ -11,13 +11,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * <p>
- * Mapper 接口
- * </p>
- * @author byteblogs
- * @since 2019-08-28
- */
+
 public interface CategoryDao extends BaseDao<Category> {
 
     /**

@@ -10,11 +10,6 @@ import com.zplus.terablog.common.validator.group.Update;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
-/**
- * @Description:
- * @Author:byteblogs
- * @Date:2018/09/21 13:30
- */
 @Data
 @Accessors(chain = true)
 public class BaseVO<T> {

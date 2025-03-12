@@ -11,10 +11,6 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-/**
- * @author byteblogs
- * @since 2019-09-18
- */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)

@@ -12,8 +12,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @author byteblogs
- * @since 2019-09-03
+ *     blogs
  */
 @RestController
 @RequestMapping("/comments")

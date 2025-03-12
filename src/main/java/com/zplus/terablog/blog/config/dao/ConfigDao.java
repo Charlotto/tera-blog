@@ -7,8 +7,7 @@ import com.zplus.terablog.blog.config.domain.po.Config;
  * <p>
  * Mapper 接口
  * </p>
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 public interface ConfigDao extends BaseDao<Config> {
 

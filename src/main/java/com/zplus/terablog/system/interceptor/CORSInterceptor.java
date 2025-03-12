@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @Author:byteblogs
- * @Date:2018/09/27 12:52
+ *   
+
  */
 @Component
 public class CORSInterceptor extends HandlerInterceptorAdapter {

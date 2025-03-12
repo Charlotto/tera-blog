@@ -7,9 +7,9 @@ import us.codecraft.webmagic.model.annotation.ExtractBy;
 import java.util.List;
 
 /**
- * @author: zsg
+ *     
  * @description:
- * @date: 2019/8/3 13:15
+
  * @modified:
  */
 

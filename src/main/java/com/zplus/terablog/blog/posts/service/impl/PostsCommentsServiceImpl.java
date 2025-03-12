@@ -27,8 +27,7 @@ import java.util.Optional;
  * <p>
  * 评论表 服务实现类
  * </p>
- * @author byteblogs
- * @since 2019-09-03
+ *     blogs
  */
 @Service
 public class PostsCommentsServiceImpl extends BaseServiceImpl<PostsCommentsDao, PostsComments> implements PostsCommentsService {

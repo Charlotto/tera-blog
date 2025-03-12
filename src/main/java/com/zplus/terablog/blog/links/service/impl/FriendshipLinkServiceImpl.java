@@ -23,8 +23,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
- * @author byteblogs
- * @since 2019-09-07
+ *     blogs
  */
 @Service
 public class FriendshipLinkServiceImpl extends BaseServiceImpl<FriendshipLinkDao, FriendshipLink> implements FriendshipLinkService {

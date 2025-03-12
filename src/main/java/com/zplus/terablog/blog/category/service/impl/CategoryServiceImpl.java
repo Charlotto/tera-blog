@@ -37,8 +37,7 @@ import java.util.stream.Collectors;
  * 服务实现类
  * </p>
  *
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 @Service
 public class CategoryServiceImpl extends ServiceImpl<CategoryDao, Category> implements CategoryService {

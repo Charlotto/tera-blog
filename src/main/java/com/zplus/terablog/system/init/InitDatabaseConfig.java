@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
 import java.sql.*;
 
 /**
- * @author byteblogs
- * @date 2019/11/24
+ *     blogs
+
  */
 @Component
 @Slf4j

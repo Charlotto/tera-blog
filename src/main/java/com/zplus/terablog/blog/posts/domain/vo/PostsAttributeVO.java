@@ -4,8 +4,7 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 /**
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 @Data
 @Accessors(chain = true)

@@ -7,10 +7,7 @@ import javax.annotation.PostConstruct;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- * @author zhangshuguang
- * @date 2019/12/25
- */
+
 @Service
 @Slf4j
 public class TeraBlogConfigTable implements TableInfoService {

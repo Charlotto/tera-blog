@@ -3,7 +3,7 @@ package com.zplus.terablog.common.exception;
 /**
  * 自定义异常类型是方便全局异常拦截器将参数异常拦截，做统一的Response响应编码.如(20,"Parameter Error")
  *
- * @author Andy Chen
+ *     ndy Chen
  * @date 9/30/19 1:31 PM
  */
 public class ApiInvalidParamException extends RuntimeException {

@@ -15,7 +15,7 @@ import static java.lang.annotation.ElementType.TYPE;
 
 /**
  * 不为空字符串
- * @author Andy Chen
+ *     ndy Chen
  * @date 9/30/19 1:10 PM
  */
 @Target({TYPE, ANNOTATION_TYPE,FIELD})

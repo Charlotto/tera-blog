@@ -10,8 +10,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 public interface PostsDao extends BaseDao<Posts> {
 

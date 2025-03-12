@@ -19,8 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author byteblogs
- * @since 2019-04-03
+ *     blogs
  */
 @RestController
 @RequestMapping("/link")

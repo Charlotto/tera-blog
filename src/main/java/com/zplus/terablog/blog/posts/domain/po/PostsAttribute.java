@@ -14,8 +14,7 @@ import java.io.Serializable;
  * <p>
  *
  * </p>
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

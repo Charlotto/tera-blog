@@ -1,8 +1,8 @@
 package com.zplus.terablog.common.enums;
 
 /**
- * @Author:byteblogs
- * @Date:2018/09/27 12:52
+ *   
+
  */
 public enum SystemLanguageEnum {
 

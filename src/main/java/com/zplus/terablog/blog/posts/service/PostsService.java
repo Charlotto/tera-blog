@@ -6,8 +6,7 @@ import com.zplus.terablog.blog.posts.domain.po.Posts;
 import com.zplus.terablog.blog.posts.domain.vo.PostsVO;
 
 /**
- * @author byteblogs
- * @since 2019-08-28
+ *     blogs
  */
 public interface PostsService extends BaseService<Posts> {
 

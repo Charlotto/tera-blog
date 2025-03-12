@@ -12,8 +12,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @author byteblogs
- * @since 2019-09-02
+ *     blogs
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

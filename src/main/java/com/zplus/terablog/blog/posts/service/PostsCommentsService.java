@@ -9,8 +9,7 @@ import com.zplus.terablog.blog.posts.domain.vo.PostsCommentsVO;
  * <p>
  * 评论表 服务类
  * </p>
- * @author byteblogs
- * @since 2019-09-03
+ *     blogs
  */
 public interface PostsCommentsService extends BaseService<PostsComments> {
 

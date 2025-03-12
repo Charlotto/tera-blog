@@ -15,8 +15,8 @@ import java.util.Properties;
 
 /**
  * @Description: 异常提示工具类
- * @Author: byteblogs
- * @Date: 2019/2/14 11:55
+ *    
+
  */
 public class ErrorMessageUtil {
 

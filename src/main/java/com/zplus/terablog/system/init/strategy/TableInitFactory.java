@@ -5,10 +5,7 @@ import com.zplus.terablog.common.validator.annotion.NotNull;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * @author zhangshuguang
- * @date 2019/12/25
- */
+
 public class TableInitFactory {
     private static final Map<String, TableInfoService> tableInfoServiceMap = new ConcurrentHashMap<>();
 

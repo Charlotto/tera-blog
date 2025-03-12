@@ -11,10 +11,7 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 import java.time.LocalDateTime;
 
-/**
- * 用户表社交信息表 实体类
- * @author nosum
- */
+
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)

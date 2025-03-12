@@ -8,7 +8,7 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 /**
- * @author Andy Chen
+ *     ndy Chen
  * @date 9/30/19 12:41 PM
  */
 public class RangValidator implements ConstraintValidator<Range, String> {

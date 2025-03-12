@@ -20,10 +20,7 @@ import com.zplus.terablog.common.util.ThrowableUtils;
 import com.zplus.terablog.blog.category.domain.vo.CategoryVO;
 import com.zplus.terablog.blog.category.service.CategoryService;
 
-/**
- * @author byteblogs
- * @since 2019-08-28
- */
+
 @RestController
 @RequestMapping("/category")
 public class CategoryController {

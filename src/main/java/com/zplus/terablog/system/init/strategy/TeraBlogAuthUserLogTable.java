@@ -18,7 +18,7 @@ public class TeraBlogAuthUserLogTable implements TableInfoService {
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogAuthUserLog());
+            stat.execute(createTeraBlogAuthUserLog());
             log.info("初始化terablog_auth_user_log完成");
         } catch (final SQLException e) {
             log.info("初始化terablog_auth_user_log失败", e);
@@ -30,7 +30,7 @@ public class TeraBlogAuthUserLogTable implements TableInfoService {
         TableInitFactory.register("terablog_auth_user_log", this);
     }
 
-    private static String createHelloBlogAuthUserLog() {
+    private static String createTeraBlogAuthUserLog() {
         return "CREATE TABLE `terablog_auth_user_log` (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',\n" +
                 "  `user_id` varchar(20) NOT NULL COMMENT '记录用户id(游客取系统id：-1)',\n" +

@@ -18,7 +18,7 @@ public class TeraBlogPostsCommentsTable implements TableInfoService, Initializin
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogPostsComments());
+            stat.execute(createTeraBlogPostsComments());
             log.info("初始化terablog_posts_comments完成");
         } catch (final SQLException e) {
             log.error("初始化terablog_posts_comments失败", e);
@@ -30,7 +30,7 @@ public class TeraBlogPostsCommentsTable implements TableInfoService, Initializin
         TableInitFactory.register("terablog_posts_comments", this);
     }
 
-    private static String createHelloBlogPostsComments() {
+    private static String createTeraBlogPostsComments() {
         return "CREATE TABLE `terablog_posts_comments`  (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT,\n" +
                 "  `author_id` bigint(20) NOT NULL,\n" +

@@ -18,7 +18,7 @@ public class TeraBlogConfigTable implements TableInfoService {
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogConfig());
+            stat.execute(createTeraBlogConfig());
             stat.execute(initData());
             log.info("初始化terablog_config完成");
         } catch (final SQLException e) {
@@ -31,7 +31,7 @@ public class TeraBlogConfigTable implements TableInfoService {
         TableInitFactory.register("terablog_config", this);
     }
 
-    private static String createHelloBlogConfig() {
+    private static String createTeraBlogConfig() {
         return "CREATE TABLE `terablog_config`  (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT,\n" +
                 "  `config_key` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '配置key',\n" +

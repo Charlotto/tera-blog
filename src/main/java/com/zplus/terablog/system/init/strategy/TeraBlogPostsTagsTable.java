@@ -18,7 +18,7 @@ public class TeraBlogPostsTagsTable implements TableInfoService, InitializingBea
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogPostsTags());
+            stat.execute(createTeraBlogPostsTags());
             log.info("初始化terablog_posts_tags完成");
         } catch (final SQLException e) {
             log.error("初始化terablog_posts_tags失败", e);
@@ -30,7 +30,7 @@ public class TeraBlogPostsTagsTable implements TableInfoService, InitializingBea
         TableInitFactory.register("terablog_posts_tags", this);
     }
 
-    private static String createHelloBlogPostsTags() {
+    private static String createTeraBlogPostsTags() {
         return "CREATE TABLE `terablog_posts_tags`  (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT,\n" +
                 "  `tags_id` bigint(32) NOT NULL COMMENT '名称',\n" +

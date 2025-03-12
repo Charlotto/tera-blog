@@ -1,2 +1,0 @@
-2025-03-12 21:48:35.826 [http-nio-8086-exec-4] WARN   com.zplus.terablog.blog.monitor.util.RuntimeUtil - total=15564054528 used=11108388864 free=4455665664
-2025-03-12 21:52:46.373 [http-nio-8086-exec-4] WARN   com.zplus.terablog.blog.monitor.util.RuntimeUtil - total=15564054528 used=11039490048 free=4524564480

@@ -18,7 +18,7 @@ public class TeraBlogTagsTable implements TableInfoService, InitializingBean {
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogTags());
+            stat.execute(createTeraBlogTags());
             log.info("初始化terablog_tags完成");
         } catch (final SQLException e) {
             log.error("初始化terablog_tags失败", e);
@@ -31,7 +31,7 @@ public class TeraBlogTagsTable implements TableInfoService, InitializingBean {
     }
 
 
-    private static String createHelloBlogTags() {
+    private static String createTeraBlogTags() {
         return "CREATE TABLE `terablog_tags`  (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT,\n" +
                 "  `name` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '名称',\n" +

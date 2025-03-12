@@ -18,7 +18,7 @@ public class TeraBlogCategoryTable implements TableInfoService, InitializingBean
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogCategory());
+            stat.execute(createTeraBlogCategory());
             log.info("初始化terablog_category完成");
         } catch (final SQLException e) {
             log.error("初始化terablog_category失败", e);
@@ -30,7 +30,7 @@ public class TeraBlogCategoryTable implements TableInfoService, InitializingBean
         TableInitFactory.register("terablog_category", this);
     }
 
-    private static String createHelloBlogCategory() {
+    private static String createTeraBlogCategory() {
         return "CREATE TABLE `terablog_category`  (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT,\n" +
                 "  `name` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '名称',\n" +

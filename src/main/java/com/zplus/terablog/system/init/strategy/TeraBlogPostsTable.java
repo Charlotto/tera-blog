@@ -18,7 +18,7 @@ public class TeraBlogPostsTable implements TableInfoService, InitializingBean {
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogPosts());
+            stat.execute(createTeraBlogPosts());
             log.info("初始化terablog_posts完成");
         } catch (final SQLException e) {
             log.error("初始化terablog_posts失败", e);
@@ -30,7 +30,7 @@ public class TeraBlogPostsTable implements TableInfoService, InitializingBean {
         TableInitFactory.register("terablog_posts", this);
     }
 
-    private static String createHelloBlogPosts() {
+    private static String createTeraBlogPosts() {
         return "CREATE TABLE `terablog_posts`  (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',\n" +
                 "  `author_id` bigint(255) NULL DEFAULT NULL COMMENT '文章创建人',\n" +

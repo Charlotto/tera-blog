@@ -18,7 +18,7 @@ public class TeraBlogAuthTokenTable implements TableInfoService {
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogAuthToken());
+            stat.execute(createTeraBlogAuthToken());
             log.info("初始化terablog_auth_token完成");
         } catch (final SQLException e) {
             log.error("初始化terablog_auth_token失败", e);
@@ -30,7 +30,7 @@ public class TeraBlogAuthTokenTable implements TableInfoService {
         TableInitFactory.register("terablog_auth_token", this);
     }
 
-    private static String createHelloBlogAuthToken() {
+    private static String createTeraBlogAuthToken() {
         return "CREATE TABLE `terablog_auth_token`  (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT,\n" +
                 "  `token` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'token',\n" +

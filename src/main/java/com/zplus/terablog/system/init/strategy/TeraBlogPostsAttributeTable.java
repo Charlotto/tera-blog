@@ -18,7 +18,7 @@ public class TeraBlogPostsAttributeTable implements TableInfoService, Initializi
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogPostsAttribute());
+            stat.execute(createTeraBlogPostsAttribute());
             log.info("初始化terablog_posts_attribute完成");
         } catch (final SQLException e) {
             log.error("初始化terablog_posts_attribute失败", e);
@@ -30,7 +30,7 @@ public class TeraBlogPostsAttributeTable implements TableInfoService, Initializi
         TableInitFactory.register("terablog_posts_attribute", this);
     }
 
-    private static String createHelloBlogPostsAttribute() {
+    private static String createTeraBlogPostsAttribute() {
         return "CREATE TABLE `terablog_posts_attribute`  (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',\n" +
                 "  `content` longtext CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '内容',\n" +

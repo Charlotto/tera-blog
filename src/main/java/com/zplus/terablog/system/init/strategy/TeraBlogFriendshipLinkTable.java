@@ -18,7 +18,7 @@ public class TeraBlogFriendshipLinkTable implements TableInfoService, Initializi
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogFriendshipLink());
+            stat.execute(createTeraBlogFriendshipLink());
             log.info("初始化terablog_friendship_link完成");
         } catch (final SQLException e) {
             log.error("初始化terablog_friendship_link失败", e);
@@ -30,7 +30,7 @@ public class TeraBlogFriendshipLinkTable implements TableInfoService, Initializi
         TableInitFactory.register("terablog_friendship_link", this);
     }
 
-    private static String createHelloBlogFriendshipLink() {
+    private static String createTeraBlogFriendshipLink() {
         return "CREATE TABLE `terablog_friendship_link`  (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT,\n" +
                 "  `title` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '标题',\n " +

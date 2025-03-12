@@ -18,7 +18,7 @@ public class TeraBlogMenuTable implements TableInfoService, InitializingBean {
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogMenu());
+            stat.execute(createTeraBlogMenu());
             log.info("初始化terablog_menu完成");
         } catch (final SQLException e) {
             log.error("初始化terablog_menu失败", e);
@@ -30,7 +30,7 @@ public class TeraBlogMenuTable implements TableInfoService, InitializingBean {
         TableInitFactory.register("terablog_menu", this);
     }
 
-    private static String createHelloBlogMenu() {
+    private static String createTeraBlogMenu() {
         return "CREATE TABLE `terablog_menu` (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT,\n" +
                 "  `parent_id` bigint(20) DEFAULT '0' COMMENT '父菜单Id',\n" +

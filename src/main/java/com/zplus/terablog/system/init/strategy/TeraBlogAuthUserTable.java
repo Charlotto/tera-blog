@@ -15,7 +15,7 @@ import java.sql.Statement;
 @Slf4j
 public class TeraBlogAuthUserTable implements TableInfoService, InitializingBean {
 
-    private static String createHelloBlogAuthUser() {
+    private static String createTeraBlogAuthUser() {
         return "CREATE TABLE `terablog_auth_user` (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',\n" +
                 "  `social_id` varchar(255) DEFAULT NULL COMMENT '社交账户ID',\n" +
@@ -38,7 +38,7 @@ public class TeraBlogAuthUserTable implements TableInfoService, InitializingBean
     @Override
     public void builderTable(Statement stat) {
         try {
-            stat.execute(createHelloBlogAuthUser());
+            stat.execute(createTeraBlogAuthUser());
             log.info("初始化terablog_auth_user完成");
         } catch (SQLException e) {
             log.error("初始化terablog_auth_user失败", e);

@@ -18,7 +18,7 @@ public class TeraBlogBlackListTable implements TableInfoService {
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogAuthUserLog());
+            stat.execute(createTeraBlogAuthUserLog());
             log.info("初始化terablog_black_list完成");
         } catch (final SQLException e) {
             log.info("初始化terablog_black_list失败", e);
@@ -30,7 +30,7 @@ public class TeraBlogBlackListTable implements TableInfoService {
         TableInitFactory.register("terablog_black_list", this);
     }
 
-    private static String createHelloBlogAuthUserLog() {
+    private static String createTeraBlogAuthUserLog() {
         return "CREATE TABLE `terablog_black_list` (\n" +
                 "  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',\n" +
                 "  `ip_range` varchar(150) DEFAULT NULL COMMENT 'ip范围',\n" +

@@ -17,7 +17,7 @@ public class TeraBlogAuthUserSocialTable implements TableInfoService {
     @Override
     public void builderTable(final Statement stat) {
         try {
-            stat.execute(createHelloBlogAuthUserSocial());
+            stat.execute(createTeraBlogAuthUserSocial());
             log.info("初始化terablog_auth_user_social完成");
         } catch (final SQLException e) {
             log.info("初始化terablog_auth_user_social失败", e);
@@ -29,7 +29,7 @@ public class TeraBlogAuthUserSocialTable implements TableInfoService {
         TableInitFactory.register("terablog_auth_user_social", this);
     }
 
-    private static String createHelloBlogAuthUserSocial() {
+    private static String createTeraBlogAuthUserSocial() {
         return "CREATE TABLE `terablog_auth_user_social` (\n" +
                 "  `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键',\n" +
                 "  `code` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'qq、csdn、wechat、weibo、email等',\n" +

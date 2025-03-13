@@ -27,25 +27,8 @@ public class ALiYunOSSUploadFileTemplateServiceImpl implements UploadFileTemplat
 
     @Override
     public String doSaveFileStore(final MultipartFile file) {
-        final OSS ossClient = new OSSClientBuilder()
-                .build(ConfigCache.getConfig(Constants.ALIYUN_OSS_ENDPOINT),
-                        ConfigCache.getConfig(Constants.ALIYUN_OSS_ACCESS_KEY),
-                        ConfigCache.getConfig(Constants.ALIYUN_OSS_SECRET_KEY));
-        try {
-            final String fileName = FileUtil.createSingleFilePath(ConfigCache.getConfig(Constants.ALIYUN_OSS_PATH), file.getOriginalFilename());
-            final PutObjectRequest putObjectRequest = new PutObjectRequest(ConfigCache.getConfig(Constants.ALIYUN_OSS_BUCKET), fileName, file.getInputStream());
-            final ObjectMetadata metadata = new ObjectMetadata();
-            metadata.setHeader(OSSHeaders.OSS_STORAGE_CLASS, StorageClass.Standard.toString());
-            putObjectRequest.setMetadata(metadata);
-            ossClient.putObject(putObjectRequest);
-            return ConfigCache.getConfig(Constants.ALIYUN_OSS_IMAGE_DOMAIN) + fileName;
-        } catch (final IOException e) {
-            return "";
-        } finally {
-            if (ossClient != null) {
-                ossClient.shutdown();
-            }
-        }
+        // 主要逻辑
+        return "";
     }
 
     @Override

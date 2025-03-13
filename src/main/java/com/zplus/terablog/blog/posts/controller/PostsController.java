@@ -24,9 +24,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-/**
- *     blogs@aliyun.com
- */
 @RestController
 @RequestMapping("/posts")
 public class PostsController {
@@ -67,7 +64,8 @@ public class PostsController {
     @OperateLog(module = "获取文章", code=OperateEnum.GET_POSTS_DETAIL)
     @GetMapping("/posts/v1/{id}")
     public Result getPosts(@PathVariable Long id) {
-        return this.postsService.getPosts(id);
+        Result postResult = this.postsService.getPosts(id);
+        return postResult;
     }
 
     @LoginRequired

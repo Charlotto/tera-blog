@@ -36,7 +36,7 @@ public class TeraBlogPostsTable implements TableInfoService, InitializingBean {
                 "  `comments` int(11) NOT NULL DEFAULT 0 COMMENT '评论数',\n" +
                 "  `is_comment` smallint(6) NULL DEFAULT 1 COMMENT '是否打开评论 (0 不打开 1 打开 )',\n" +
                 "  `category_id` bigint(20) DEFAULT NULL COMMENT '分类主键',\n" +
-                "  `sync_status` smallint(6) NOT NULL DEFAULT 0 COMMENT '同步到byteblogs状态',\n" +
+                "  `sync_status` smallint(6) NOT NULL DEFAULT 0 COMMENT '同步到terablogs状态',\n" +
                 "  `status` int(11) NOT NULL DEFAULT 1 COMMENT '状态 1 草稿 2 发布',\n" +
                 "  `summary` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '摘要',\n" +
                 "  `views` int(11) NOT NULL DEFAULT 0 COMMENT '浏览次数',\n" +

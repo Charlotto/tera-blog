@@ -238,7 +238,7 @@ public class BlogMoveServiceImpl implements BlogMoveService {
         postsVO.setTitle(title);
         postsVO.setContent(content);
         postsVO.setStatus(PostsStatusEnum.DRAFT.getStatus());
-        postsVO.setIsPublishByteBlogs(Constants.NO);
+        postsVO.setIsPublishTeraBlogs(Constants.NO);
 
         if (dateTime != null) {
             postsVO.setCreateTime(dateTime);

@@ -67,8 +67,8 @@
             <if test="condition.title != null and condition.title != ''">
                 AND posts.title LIKE #{condition.title}
             </if>
-            <if test="condition.isPublishByteBlogs != null and condition.isPublishByteBlogs != ''">
-                AND posts.sync_status = #{condition.isPublishByteBlogs}
+            <if test="condition.isPublishTeraBlogs != null and condition.isPublishTeraBlogs != ''">
+                AND posts.sync_status = #{condition.isPublishTeraBlogs}
             </if>
             <if test="condition.status != null and condition.status != ''">
                 AND posts.status = #{condition.status}

@@ -4,12 +4,6 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
-/**
- * @description:
- *    
-
- */
 public class ConfigCache {
 
     private final static Map<String, String> configCache = new ConcurrentHashMap<>();

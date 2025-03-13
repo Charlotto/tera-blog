@@ -88,7 +88,7 @@ public class Posts extends Model<Posts> {
     private Integer isComment;
 
     /**
-     * 同步到byteblogs状态 (0 未同步 或者同步失败的状态 1同步已成功)
+     * 同步到terablog状态 (0 未同步 或者同步失败的状态 1同步已成功)
      */
     private Integer syncStatus;
 

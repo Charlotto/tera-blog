@@ -4,12 +4,14 @@ import com.zplus.terablog.common.cache.ConfigCache;
 import com.zplus.terablog.common.constant.Constants;
 import com.zplus.terablog.common.validator.annotion.NotNull;
 import com.zplus.terablog.blog.file.service.UploadFileTemplateService;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 文件存储实例工厂
+ * factory mathod pattern
  */
 public class UploadFileFactory {
 
@@ -17,7 +19,7 @@ public class UploadFileFactory {
 
     /**
      * 获取工厂UploadFileTemplateService
-     *
+     * Prototype pattern
      * @return
      */
     public static UploadFileTemplateService getUploadFileService() {
@@ -26,7 +28,7 @@ public class UploadFileFactory {
 
     /**
      * 工厂注册
-     *
+     * register function
      * @param storyType
      * @param uploadFileTemplateService
      */

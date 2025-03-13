@@ -10,10 +10,6 @@ import com.vladsch.flexmark.util.options.MutableDataSet;
 
 import java.util.Arrays;
 
-/**
- *    
-
- */
 public class Markdown2HtmlUtil {
 
     /**

@@ -27,23 +27,8 @@ public class COSUploadFileTemplateServiceImpl implements UploadFileTemplateServi
 
     @Override
     public String doSaveFileStore(final MultipartFile file) {
-        COSClient cosClient = null;
-        try {
-            final COSCredentials cred = new BasicCOSCredentials(ConfigCache.getConfig(Constants.COS_ACCESS_KEY), ConfigCache.getConfig(Constants.COS_SECRET_KEY));
-            final Region region = new Region(ConfigCache.getConfig(Constants.COS_REGION));
-            final ClientConfig clientConfig = new ClientConfig(region);
-            cosClient = new COSClient(cred, clientConfig);
-            final String fileName = FileUtil.createSingleFilePath(ConfigCache.getConfig(Constants.COS_PATH), file.getOriginalFilename());
-            final PutObjectRequest putObjectRequest = new PutObjectRequest(ConfigCache.getConfig(Constants.COS_BUCKET), fileName, file.getInputStream(), null);
-            cosClient.putObject(putObjectRequest);
-            return ConfigCache.getConfig(Constants.COS_IMAGE_DOMAIN) + fileName;
-        } catch (final IOException e) {
-            return "";
-        } finally {
-            if (cosClient != null) {
-                cosClient.shutdown();
-            }
-        }
+        /* 主要业务逻辑 */
+        return "";
     }
 
     @Override

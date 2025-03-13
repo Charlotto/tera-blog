@@ -11,20 +11,14 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-/**
- *     
- * @description:
-
- * @modified:
- */
 @RestController
 @RequestMapping("/file")
 public class UploadFileController {
 
     @PostMapping("/file/v1/upload")
     public Result uploadFile(@RequestParam(value = "file") final MultipartFile file, final HttpServletRequest request) throws IOException {
+
         final String store = UploadFileFactory.getUploadFileService().saveFileStore(file);
         return Result.createWithSuccessMessage().setExtra(store);
     }
-
 }

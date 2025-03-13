@@ -19,7 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
 /**
- *     dministrator
+ * Concrete Factory
  */
 @Service
 public class QiNiuUploadFileTemplateServiceImpl implements UploadFileTemplateService, InitializingBean {

@@ -5,10 +5,6 @@ import com.zplus.terablog.common.base.domain.PageInfo;
 import com.zplus.terablog.common.base.domain.vo.BaseVO;
 import com.zplus.terablog.common.constant.Constants;
 
-/**
- *    
-
- */
 public class PageUtil {
 
     public static Page checkAndInitPage(BaseVO baseVO) {

@@ -22,5 +22,4 @@ public class LoadConfigListener {
             ConfigCache.putConfig(config.getConfigKey(), config.getConfigValue());
         });
     }
-
 }

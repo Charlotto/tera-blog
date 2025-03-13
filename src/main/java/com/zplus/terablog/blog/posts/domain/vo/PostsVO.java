@@ -98,7 +98,7 @@ public class PostsVO extends BaseVO<PostsVO> {
     /**
      * 是否发布到主站
      */
-    private Integer isPublishByteBlogs;
+    private Integer isPublishTeraBlogs;
 
     private String author;
 

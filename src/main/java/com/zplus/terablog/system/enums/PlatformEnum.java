@@ -9,10 +9,6 @@ import com.zplus.terablog.blog.posts.domain.vo.SegmentFaultVO;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- *    
-
- */
 public enum PlatformEnum {
 
     /**

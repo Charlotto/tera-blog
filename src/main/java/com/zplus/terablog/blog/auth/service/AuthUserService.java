@@ -23,7 +23,7 @@ public interface AuthUserService extends BaseService<AuthUser> {
      *
      * @return
      */
-    Result getMasterUserInfo();
+    Result getAuthorUserInfo();
 
     /**
      * 获取用户列表
@@ -56,7 +56,7 @@ public interface AuthUserService extends BaseService<AuthUser> {
      */
     Result updateUser(AuthUserVO authUserVO);
 
-    Result saveAuthUserStatus(AuthUserVO authUserVO);
+    Result updateAuthUserStatus(AuthUserVO authUserVO);
 
     Result deleteUsers(Long id);
 

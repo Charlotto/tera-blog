@@ -55,7 +55,7 @@ public class AuthUserServiceImpl extends ServiceImpl<AuthUserDao, AuthUser> impl
     }
 
     @Override
-    public Result getMasterUserInfo() {
+    public Result getAuthorUserInfo() {
         AuthUser authUser = authUserDao.selectOne(new LambdaQueryWrapper<AuthUser>().eq(AuthUser::getRoleId, RoleEnum.ADMIN.getRoleId()));
         AuthUserVO authUserVO = new AuthUserVO();
         if (authUser != null) {
@@ -149,7 +149,7 @@ public class AuthUserServiceImpl extends ServiceImpl<AuthUserDao, AuthUser> impl
     }
 
     @Override
-    public Result saveAuthUserStatus(AuthUserVO authUserVO) {
+    public Result updateAuthUserStatus(AuthUserVO authUserVO) {
         if (authUserVO.getStatus() != null
                 && authUserVO.getId() != null
                 && authUserDao.selectCount(new LambdaQueryWrapper<AuthUser>()

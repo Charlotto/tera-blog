@@ -22,14 +22,22 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/auth")
 public class AuthUserController {
 
+    /* user service core logic */
     @Autowired
     private AuthUserService authUserService;
 
+    /* handle 3rd platform auth logic */
     @Autowired
     private OauthService oauthService;
 
+    /* social media binding logic */
     @Autowired
     private AuthUserSocialService authUserSocialService;
+
+
+    /// ////////////////////
+    /// regular user APIs
+    /// ////////////////////
 
     @LoginRequired(role = RoleEnum.USER)
     @GetMapping("/user/v1/get")
@@ -46,13 +54,13 @@ public class AuthUserController {
 
     @LoginRequired(role = RoleEnum.ADMIN)
     @PutMapping("/status/v1/update")
-    public Result saveAuthUserStatus(@RequestBody AuthUserVO authUserVO) {
-        return authUserService.saveAuthUserStatus(authUserVO);
+    public Result updateAuthUserStatus(@RequestBody AuthUserVO authUserVO) {
+        return authUserService.updateAuthUserStatus(authUserVO);
     }
 
     @GetMapping("/master/v1/get")
-    public Result getMasterUserInfo() {
-        return authUserService.getMasterUserInfo();
+    public Result getAuthorUserInfo() {
+        return authUserService.getAuthorUserInfo();
     }
 
     @LoginRequired
@@ -60,6 +68,23 @@ public class AuthUserController {
     public Result getUserList(AuthUserVO authUserVO) {
         return authUserService.getUserList(authUserVO);
     }
+
+    @LoginRequired
+    @PutMapping("/password/v1/update")
+    public Result updatePassword(@RequestBody AuthUserVO authUserVO) {
+        return oauthService.updatePassword(authUserVO);
+    }
+
+    @LoginRequired
+    @PutMapping("/user/v1/update")
+    public Result updateUser(@RequestBody AuthUserVO authUserVO) {
+        return authUserService.updateUser(authUserVO);
+    }
+
+
+    /// //////////////////
+    /// github login APIs
+    /// //////////////////
 
     @GetMapping("/github/v1/get")
     public Result oauthLoginByGithub() {
@@ -84,27 +109,18 @@ public class AuthUserController {
         return oauthService.registerAdmin(authUserVO);
     }
 
+    /// //////////////////
+    /// admin only APIs
+    /// //////////////////
     @PostMapping("/admin/v1/login")
     public Result adminLogin(@RequestBody AuthUserVO authUserVO) {
         return oauthService.login(authUserVO);
     }
 
     @LoginRequired
-    @PutMapping("/password/v1/update")
-    public Result updatePassword(@RequestBody AuthUserVO authUserVO) {
-        return oauthService.updatePassword(authUserVO);
-    }
-
-    @LoginRequired
     @PutMapping("/admin/v1/update")
     public Result updateAdmin(@RequestBody AuthUserVO authUserVO) {
         return authUserService.updateAdmin(authUserVO);
-    }
-
-    @LoginRequired
-    @PutMapping("/user/v1/update")
-    public Result updateUser(@RequestBody AuthUserVO authUserVO) {
-        return authUserService.updateUser(authUserVO);
     }
 
 
@@ -117,6 +133,11 @@ public class AuthUserController {
     public byte[] getAvatar() {
         return FileUtil.tranToBytes(authUserService.getAvatar());
     }
+
+
+    /// ///////////////////
+    /// social media APIs
+    /// ///////////////////
 
     @PostMapping("/social/v1/add")
     @LoginRequired(role = RoleEnum.ADMIN)
@@ -136,7 +157,6 @@ public class AuthUserController {
     public Result getSocial(@PathVariable("id") Long id) {
         return authUserSocialService.getSocial(id);
     }
-
 
     @DeleteMapping("/social/v1/{id}")
     public Result delSocial(@PathVariable("id") Long id) {

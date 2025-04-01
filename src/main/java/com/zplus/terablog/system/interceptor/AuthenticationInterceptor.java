@@ -18,8 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 
 /**
- *   
-
+ *
  */
 @Configuration
 public class AuthenticationInterceptor implements HandlerInterceptor {

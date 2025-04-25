@@ -9,9 +9,6 @@ import lombok.experimental.Accessors;
 import java.time.LocalDateTime;
 import java.util.List;
 
-/**
- *     blogs
- */
 @Data
 @Accessors(chain = true)
 public class AuthUserVO extends BaseVO<AuthUserVO> {
